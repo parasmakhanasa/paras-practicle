@@ -1,0 +1,41 @@
+.footer {
+	padding: 100px 0;
+	position: relative;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #c6c6c6;
+    .footer-logo {
+    	margin-bottom: 30px;
+    	a {
+    		display: inline-block;
+    	}
+    }
+    ul {
+    	list-style: none;
+    	padding: 0;
+    	margin-bottom: 30px;
+    	li {
+    		display: inline-block;
+    		margin: 0 15px;
+    		a { 
+    			color: #c6c6c6;
+    			text-decoration: none;
+    			@include transition(0.4s ease-in-out);
+    			&:hover {
+    				color:$base-color;
+    			}
+    		}
+    	}
+    }
+    p {
+    	a {
+    		color: $base-color;
+    		text-decoration: none;
+    		&:hover {
+    			color:$white;
+    		}
+    	}
+    }
+}
