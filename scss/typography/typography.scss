@@ -64,3 +64,68 @@ h6 {
 .fw-800 {
 	font-weight: 800;
 } 
+
+@media (max-width: 991px) {
+	h1 {
+		font-size: 50px;
+		line-height: 70px;
+	}
+	h2 {
+		font-size: 42px;
+		line-height: 50px;
+	}
+	h3 {
+		font-size: 38px;
+		line-height: 46px; 
+	}
+	h4 {
+		font-size: 30px;
+		line-height: 38px; 
+	}
+	h5 {
+		font-size: 26px;
+		line-height: 34px; 
+	}
+	h6 {
+	    font-size: 20px;
+	    line-height: 28px; 
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 40px;
+		line-height: 52px;
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 40px;
+		span {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+	h3 {
+		font-size: 32px;
+		line-height: 38px; 
+	} 
+}
+
+@media (max-width: 400px) {
+	h1 {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	h2 {
+		font-size: 30px;
+		line-height: 38px;
+		span {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+	h3 {
+		font-size: 32px;
+		line-height: 38px; 
+	} 
+}

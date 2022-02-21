@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>One page studio</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <!-- style sheets --> 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-    </head>
-<body>
+<head>
+    <title>One page studio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <!-- style sheets --> 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNavAltMarkup">
     <!-- start header -->
-    <header>
+    <header class="header">
         <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </div>
+          <div class="container-lg">
+            <div class="col-auto">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="default-logo" alt="logo">
+                    <img src="images/sticky-logo.png" class="sticky-logo" alt="logo">
+                </a>
             </div>
+            <div class="col-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-line"></span>
+                  <span class="navbar-toggler-line"></span>
+                  <span class="navbar-toggler-line"></span>
+                  <span class="navbar-toggler-line"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#about" class="inner-link nav-link">About</a></li>
+                        <li class="nav-item"><a href="#services" class="inner-link nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#project" class="inner-link nav-link">Project</a></li>
+                        <li class="nav-item"><a href="#team" class="inner-link nav-link">Team</a></li>
+                        <li class="nav-item"><a href="#testimonial" class="inner-link nav-link">Testimonial</a></li>
+                        <li class="nav-item"><a href="#blog" class="inner-link nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#contact" class="inner-link nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div> 
           </div>
         </nav>
     </header>
     <!-- end header -->
     <!-- start hero banner section -->
-    <section id="parallax" class="hero-banner" style="background-image: url('images/hero-banner.jpg');">
+    <section id="parallax" class="hero-banner pb-0" style="background-image: url('images/hero-banner.jpg');">
         <div class="overlay-bg"></div>
         <div class="container h-100 position-relative">
             <div class="row h-100">
@@ -46,15 +58,15 @@
     </section>
     <!-- end hero banner section -->
     <!-- start services section -->
-    <section class="services" style="background-image: url('images/services-bg.jpg');">
+    <section id="services" class="services" style="background-image: url('images/services-bg.jpg');">
         <div class="services-right-bg cover-background" style="background-image: url('images/services-right.jpg');">
             <div class="overlay-bg"></div>
         </div>
         <div class="container position-relative">
             <div class="row justify-content-end g-0">
-                <div class="col-md-11 bg-white services-box">
+                <div class="col-12 col-xl-11 bg-white services-box">
                     <h2><span>Our Services</span> What We Do</h2>
-                    <div class="row row-cols-2">
+                    <div class="row row-cols-1 row-cols-md-2">
                         <!-- start feature-box -->
                         <div class="col">
                             <div class="feature-box">
@@ -140,7 +152,7 @@
     </section>
     <!-- end services section -->
     <!-- start our work section -->
-    <section class="our-work">
+    <section id="project" class="our-work">
         <div class="container">
             <div class="row title">
                 <div class="col-12">
@@ -209,7 +221,7 @@
                     <p class="text-white">Passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable If you are going to use a passage of Lorem Ipsum. you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of o  ver randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need ure there isn't anything embarrassing hidden in the middle of Latin words, combined with a hidden in the middle of Latin words, combined.</p>
                 </div>
             </div>
-            <div class="row row-cols-2 g-0 our-work-box text-center">
+            <div class="row row-cols-1 row-cols-md-2 g-0 our-work-box text-center">
                 <div class="col work-box">
                     <div class="icon-right">
                         <i class="ion-ios-recording-outline"></i>
@@ -231,7 +243,7 @@
     </section>
     <!-- end our work section -->
      <!-- start our team section -->
-    <section class="our-work our-team">
+    <section id="team" class="our-work our-team">
         <div class="container">
             <div class="row title">
                 <div class="col-12">
@@ -375,11 +387,11 @@
         <div class="overlay-bg"></div>
         <div class="container position-relative">
             <div class="row align-items-center">
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-lg-9 col-md-8 sm-mb-30px">
                     <h2 class="text-white">Achieve your Business Plan...</h2>
                     <p class="text-white mb-0">Passages of Lorem Ipsum available, form, by injected humour...</p>
                 </div>
-                <div class="col-12 col-md-4 text-end">
+                <div class="col-12 col-lg-3 col-md-4 text-center text-xs-end">
                     <a href="#" class="btn btn-base-color">Get a Quote</a>
                 </div>
             </div>
@@ -387,7 +399,7 @@
     </section>
     <!-- end subscribe section -->
     <!-- start testimonial section -->
-    <section>
+    <section id="testimonial" class="testimonial-slider">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -399,8 +411,8 @@
                     <!-- Swiper -->
                 <div class="swiper testimonial">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide row"> 
-                        <div class="col-12 col-md-4 author-image">
+                    <div class="swiper-slide row justify-content-center"> 
+                        <div class="col-8 col-md-4 author-image sm-mb-30px">
                             <img src="images/author-image-01.jpg" alt="">
                             <div class="rounded-icon">
                                 <i class="fa-solid fa-quote-left"></i>
@@ -415,8 +427,8 @@
                             </div>
                         </div> 
                     </div>
-                    <div class="swiper-slide row"> 
-                        <div class="col-12 col-md-4 author-image">
+                    <div class="swiper-slide row justify-content-center"> 
+                        <div class="col-8 col-md-4 author-image sm-mb-30px">
                             <img src="images/author-image-02.jpg" alt="">
                             <div class="rounded-icon">
                                 <i class="fa-solid fa-quote-left"></i>
@@ -431,8 +443,8 @@
                             </div>
                         </div> 
                     </div>
-                    <div class="swiper-slide row"> 
-                        <div class="col-12 col-md-4 author-image">
+                    <div class="swiper-slide row justify-content-center"> 
+                        <div class="col-8 col-md-4 author-image sm-mb-30px">
                             <img src="images/author-image-03.jpg" alt="">
                             <div class="rounded-icon">
                                 <i class="fa-solid fa-quote-left"></i>
@@ -456,10 +468,10 @@
     </section>
     <!-- end testimonial section -->
     <!-- start counters section -->
-    <section class="counters cover-background position-relative" style="background-image: url('images/counters-bg.jpg');">
+    <section id="blog" class="counters cover-background position-relative" style="background-image: url('images/counters-bg.jpg');">
         <div class="overlay-bg"></div>
         <div class="container position-relative">
-            <div class="row row-cols-4 text-center">
+            <div class="row row-cols-2 row-cols-lg-4 text-center">
                 <div class="col counter-box">
                     <i class="ion-ios-person-outline text-white"></i>
                     <h2>100%</h2>
@@ -485,7 +497,7 @@
     </section>
     <!-- end counters section -->
     <!-- start contact us section -->
-    <section class="contact-us">
+    <section id="contact" class="contact-us">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -493,19 +505,19 @@
                 </div> 
             </div>
             <div class="row justify-content-center contact-form">
-                <div class="col-12 col-md-8">
-                    <form action="" method="post">
+                <div class="col-12 col-lg-8">
+                    <form>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <input class="input" type="text" name="name" placeholder="Name" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <input class="input" type="email" name="email" placeholder="Email" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <input class="input " type="tel" name="phone" placeholder="Phone Number" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <input class="input" type="text" name="name" placeholder="Subject" />
                             </div>
                             <div class="col-12">
@@ -518,7 +530,7 @@
                         </div> 
                     </form>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-lg-4">
                     <div class="address">
                         <span class="fw-600 text-dark-blue">Address</span>
                         <p>5370 S Arrowhead Trl, Baldwin, MI, 49304</p>
@@ -560,7 +572,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="footer-logo">
-                        <a href="#"><img src="images/footer-logo.png" align=""></a>
+                        <a href="#"><img src="images/footer-logo.png" alt=""></a>
                     </div>
                     <ul>
                         <li><a href="#">About</a></li>
@@ -578,13 +590,12 @@
             </div>
         </div>
     </footer>
-    <!-- start footer section -->
-
-    <!-- javascript -->
+    <!-- end footer section --> 
+    <!-- start javascript -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> 
     <script type="text/javascript" src="js/swiper.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
+    <!-- end javascript --> 
 </body>
 </html> 
